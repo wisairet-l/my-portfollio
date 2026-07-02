@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anime</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🌸 NAVBAR -->
+<header class="navbar">
+
+    <div class="logo">
+        <span>Tara</span>
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<!-- 🌸 CONTENT -->
+<section class="section" style="padding-top: 110px;">
+
+    <h2 class="section-title">🍰 Anime</h2>
+
+    <p class="section-desc">tap to explore memories</p>
+
+    <div class="grid">
+
+        <div class="item" onclick="toggleAnime('demon')">
+            <img src="images/anime/demon.jpg" alt="Demon Slayer">
+            <span>Demon Slayer</span>
+        </div>
+
+        <div class="item" onclick="toggleAnime('jojo')">
+            <img src="images/anime/jojo.jpg" alt="JoJo">
+            <span>JoJo's Bizarre Adventure</span>
+        </div>
+
+        <div class="item" onclick="toggleAnime('castlevania')">
+            <img src="images/anime/castlevania.jpg" alt="Castlevania">
+            <span>Castlevania</span>
+        </div>
+
+        <div class="item" onclick="toggleAnime('drstone')">
+            <img src="images/anime/drstone.jpg" alt="Dr. Stone">
+            <span>Dr. Stone</span>
+        </div>
+
+    </div>
+
+    <!-- 🌸 DETAIL PANEL -->
+    <div
+        id="anime-detail"
+        class="quote-box"
+        style="margin-top:30px; display:none;"
+        data-current=""
+    ></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
